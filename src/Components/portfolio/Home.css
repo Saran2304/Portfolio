@@ -1,0 +1,756 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(20, 0, 43);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.logo {
+    padding-left: 40px;
+    display: flex;
+    width: 20%;
+    color: white;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo h4 {
+    padding-left: 3%;
+}
+
+.navsections {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.navsections a {
+    text-decoration: none;
+    color: white;
+}
+
+.about {
+    width: 100%;
+    height: 91vh;
+    background-color: rgb(25, 1, 48);
+}
+
+.myself {
+    display: flex;
+    padding: 80px 0px 0px 90px;
+    color: white;
+}
+
+.myself h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.name {
+    margin-left: 10px;
+}
+
+.job {
+    display: flex;
+    padding: 10px 0px 0px 90px;
+    color: white;
+}
+
+.job h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.full {
+    margin-left: 10px;
+    color: blueviolet;
+}
+
+.content {
+    color: rgba(211, 211, 211, 0.788);
+    padding: 20px 0px 0px 90px;
+    width: 40%;
+}
+
+.content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.resume {
+    width: 55%;
+    padding-top: 50px;
+}
+
+.resume a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.myresume {
+    background: linear-gradient(to right, #f30051, #aa00ff);
+}
+
+.skills {
+    padding-top: 50px;
+    height: 100vh;
+    background-color: rgb(25, 1, 48);
+}
+
+.heading h2 {
+    font-size: 40px;
+    color: white;
+}
+
+.aboutheading {
+    color: white;
+    margin-top: 10px;
+    font-size: 15px
+}
+
+.menu {
+    color: white;
+    opacity: 0;
+}
+
+.frontend {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.frontskills {
+    height: 180px;
+    width: 70%;
+    background: #aa00ff;
+    box-shadow: 2px 5px 10px;
+    border-radius: 5px;
+}
+
+.frontskills h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.boxes {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    row-gap: 0px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 0px 5px 0px 3px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.box svg {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+}
+
+.box div {
+    height: 20px;
+    width: 20px;
+    margin-right: 3px;
+}
+
+.backend {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons8-nodejs {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMzODhlM2MiIGQ9Ik0xNy4yMDQgMTkuMTIybC00LjkwNyAyLjcxNUMxMi4xMTMgMjEuOTM4IDEyIDIyLjEyNiAxMiAyMi4zMjl2NS40MzNjMCAuMjAzLjExMy4zOS4yOTcuNDkybDQuOTA4IDIuNzE3Yy4xODMuMTAxLjQxLjEwMS41OTMgMGw0LjkwNy0yLjcxN0MyMi44ODcgMjguMTUyIDIzIDI3Ljk2NSAyMyAyNy43NjJ2LTUuNDMzYzAtLjIwMy0uMTEzLS4zOS0uMjk3LS40OTJsLTQuOTA2LTIuNzE1Yy0uMDkyLS4wNTEtLjE5NS0uMDc2LS4yOTctLjA3Ni0uMTAzIDAtLjIwNS4wMjUtLjI5Ny4wNzZNNDIuNDUxIDI0LjAxM2wtLjgxOC40NTJjLS4wMzEuMDE3LS4wNDkuMDQ4LS4wNDkuMDgydi45MDZjMCAuMDM0LjAxOS4wNjUuMDQ5LjA4MmwuODE4LjQ1M2MuMDMxLjAxNy4wNjguMDE3LjA5OSAwbC44MTgtLjQ1M2MuMDMtLjAxNy4wNDktLjA0OC4wNDktLjA4MnYtLjkwNmMwLS4wMzQtLjAxOS0uMDY1LS4wNS0uMDgybC0uODE4LS40NTJDNDIuNTM0IDI0LjAwNCA0Mi41MTcgMjQgNDIuNSAyNFM0Mi40NjYgMjQuMDA0IDQyLjQ1MSAyNC4wMTMiPjwvcGF0aD48cGF0aCBmaWxsPSIjMzc0NzRmIiBkPSJNMzUuNzUxLDEzLjM2NGwtMi4zODktMS4zMzNjLTAuMDc1LTAuMDQyLTAuMTY3LTAuMDQxLTAuMjQxLDAuMDAzIGMtMC4wNzQsMC4wNDQtMC4xMiwwLjEyMy0wLjEyLDAuMjA5TDMzLDIwLjI5NWwtMi4yMDMtMS4yMTlDMzAuNzA1LDE5LjAyNSwzMC42MDIsMTksMzAuNSwxOWMtMC4xMDIsMC0wLjIwNSwwLjAyNS0wLjI5NywwLjA3NiBoMC4wMDFsLTQuOTA3LDIuNzE1QzI1LjExMywyMS44OTIsMjUsMjIuMDgsMjUsMjIuMjgydjUuNDMzYzAsMC4yMDMsMC4xMTMsMC4zOSwwLjI5NywwLjQ5Mmw0LjkwOCwyLjcxNyBjMC4xODMsMC4xMDEsMC40MSwwLjEwMSwwLjU5MywwbDQuOTA3LTIuNzE3QzM1Ljg4NywyOC4xMDYsMzYsMjcuOTE4LDM2LDI3LjcxNVYxMy43ODhDMzYsMTMuNjEyLDM1LjkwNCwxMy40NSwzNS43NTEsMTMuMzY0eiBNMzIuODY2LDI2LjQ1OGwtMi4yMywxLjIzNWMtMC4wODMsMC4wNDYtMC4xODYsMC4wNDYtMC4yNjksMGwtMi4yMzEtMS4yMzVDMjguMDUxLDI2LjQxMiwyOCwyNi4zMjYsMjgsMjYuMjM0di0yLjQ3IGMwLTAuMDkyLDAuMDUxLTAuMTc3LDAuMTM1LTAuMjI0bDIuMjMxLTEuMjM0aC0wLjAwMWMwLjA0Mi0wLjAyMywwLjA4OC0wLjAzNCwwLjEzNS0wLjAzNGMwLjA0NywwLDAuMDkzLDAuMDEyLDAuMTM1LDAuMDM0IGwyLjIzLDEuMjM0QzMyLjk0OSwyMy41ODcsMzMsMjMuNjczLDMzLDIzLjc2NXYyLjQ3QzMzLDI2LjMyNiwzMi45NDksMjYuNDEyLDMyLjg2NiwyNi40NTh6Ij48L3BhdGg+PHBhdGggZmlsbD0iIzJlN2QzMiIgZD0iTTE3LjIwNCwxOS4xMjJMMTIsMjcuNzYyYzAsMC4yMDMsMC4xMTMsMC4zOSwwLjI5NywwLjQ5Mmw0LjkwOCwyLjcxNyBjMC4xODMsMC4xMDEsMC40MSwwLjEwMSwwLjU5MywwTDIzLDIyLjMyOWMwLTAuMjAzLTAuMTEzLTAuMzktMC4yOTctMC40OTJsLTQuOTA2LTIuNzE1Yy0wLjA5Mi0wLjA1MS0wLjE5NS0wLjA3Ni0wLjI5Ny0wLjA3NiBjLTAuMTAzLDAtMC4yMDUsMC4wMjUtMC4yOTcsMC4wNzYiPjwvcGF0aD48cGF0aCBmaWxsPSIjNGNhZjUwIiBkPSJNMTcuMjA0LDE5LjEyMmwtNC45MDcsMi43MTVDMTIuMTEzLDIxLjkzOCwxMiwyMi4xMjYsMTIsMjIuMzI5bDUuMjA0LDguNjQyIGMwLjE4MywwLjEwMSwwLjQxLDAuMTAxLDAuNTkzLDBsNC45MDctMi43MTdDMjIuODg3LDI4LjE1MiwyMywyNy45NjUsMjMsMjcuNzYybC01LjIwMy04LjY0Yy0wLjA5Mi0wLjA1MS0wLjE5NS0wLjA3Ni0wLjI5Ny0wLjA3NiBjLTAuMTAzLDAtMC4yMDUsMC4wMjUtMC4yOTcsMC4wNzYiPjwvcGF0aD48cGF0aCBmaWxsPSIjMzc0NzRmIiBkPSJNNDcuNzAzIDIxLjc5MWwtNC45MDYtMi43MTVDNDIuNzA1IDE5LjAyNSA0Mi42MDIgMTkgNDIuNSAxOWMtLjEwMiAwLS4yMDUuMDI1LS4yOTcuMDc2aC4wMDFsLTQuOTA3IDIuNzE1QzM3LjExNCAyMS44OTIgMzcgMjIuMDg0IDM3IDIyLjI5NHY1LjQxMWMwIC4yMDkuMTE0LjQwMi4yOTcuNTAzbDQuOTA4IDIuNzE3Yy4xODQuMTAyLjQwOS4xMDIuNTkzIDBsMi4yNjMtMS4yNTNjLjIwNy0uMTE1LjIwNi0uNDEyLS4wMDItLjUyNmwtNC45MjQtMi42ODdDNDAuMDUyIDI2LjQxMiA0MCAyNi4zMjUgNDAgMjYuMjMxdi0yLjQ2NmMwLS4wOTIuMDUtLjE3Ny4xMy0uMjIxbDIuMjM1LTEuMjM2aC0uMDAxYy4wNDItLjAyMy4wODgtLjAzNC4xMzUtLjAzNC4wNDcgMCAuMDkzLjAxMi4xMzUuMDM0bDIuMjM1IDEuMjM3Yy4wOC4wNDQuMTMuMTI5LjEzLjIyMXYyLjAxMmMwIC4wODYuMDQ2LjE2Ni4xMjEuMjA5LjA3NS4wNDIuMTY3LjA0Mi4yNDItLjAwMWwyLjM5OC0xLjM5M2MuMTQ4LS4wODYuMjQtLjI0NS4yNC0uNDE3di0xLjg4QzQ4IDIyLjA4NSA0Ny44ODYgMjEuODkyIDQ3LjcwMyAyMS43OTF6TTEwLjcwMyAyMS43OTFsLTQuOTA2LTIuNzE1QzUuNzA1IDE5LjAyNSA1LjYwMiAxOSA1LjUgMTljLS4xMDIgMC0uMjA1LjAyNS0uMjk3LjA3NmguMDAxbC00LjkwNyAyLjcxNUMuMTE0IDIxLjg5MiAwIDIyLjA4NCAwIDIyLjI5NHY3LjQ2NWMwIC4wODYuMDQ2LjE2Ni4xMjEuMjA5LjA3NS4wNDIuMTY3LjA0Mi4yNDItLjAwMWwyLjM5OC0xLjM5M0MyLjkwOSAyOC40ODggMyAyOC4zMjkgMyAyOC4xNTd2LTQuMzkzYzAtLjA5Mi4wNS0uMTc3LjEzLS4yMjFsMi4yMzUtMS4yMzZINS4zNjVjLjA0Mi0uMDIzLjA4OC0uMDM0LjEzNS0uMDM0LjA0NyAwIC4wOTMuMDEyLjEzNS4wMzRsMi4yMzUgMS4yMzdDNy45NSAyMy41ODggOCAyMy42NzMgOCAyMy43NjV2NC4zOTNjMCAuMTcyLjA5MS4zMzEuMjQuNDE3bDIuMzk4IDEuMzkzYy4wNzUuMDQzLjE2Ny4wNDMuMjQyLjAwMUMxMC45NTQgMjkuOTI1IDExIDI5Ljg0NSAxMSAyOS43NTl2LTcuNDY0QzExIDIyLjA4NSAxMC44ODYgMjEuODkyIDEwLjcwMyAyMS43OTF6Ij48L3BhdGg+Cjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+.icons8-express-js {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMyMTIxMjEiIGQ9Ik0yMy42OTcsMzcuNTZoMS4xOGMwLjg0LDAsMS42MzEtMC4zOTIsMi4xMzktMS4wNjFsNy40ODUtOS44NDdsNy40ODUsOS44NDcJYzAuNTA4LDAuNjY4LDEuMjk5LDEuMDYxLDIuMTM5LDEuMDYxaDEuMThMMzUuNzU2LDI1bDkuMTIxLTEyaC0xLjE4Yy0wLjg0LDAtMS42MzEsMC4zOTItMi4xMzksMS4wNjFMMzQuNSwyMy4zNDdsLTcuMDU5LTkuMjg3CUMyNi45MzMsMTMuMzkyLDI2LjE0MiwxMywyNS4zMDIsMTNoLTEuMThsOS4xMjEsMTJMMjMuNjk3LDM3LjU2eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMyMTIxMjEiIGQ9Ik0yNCwyNnYtM2MwLTYuNjc1LTUuOTQ1LTExLjk2MS0xMi44MjktMTAuODUyQzUuODEyLDEzLjAxMSwyLDE3Ljg1NywyLDIzLjI4NEwyLDI0djJ2MC4xNDIJYzAsNi41NTMsNC43NzcsMTEuNzg2LDEwLjg2OCwxMS44NThjNS4wOTIsMC4wNiw5LjM4OS0zLjM0NCwxMC43MDctNy45OTloLTEuMDI4Yy0wLjYyLDAtMS4xODIsMC4zNTUtMS40NTEsMC45MTMJYy0xLjczOSwzLjU5NS01Ljc4OSw1Ljg2Mi0xMC4yMjgsNC44NDJDNi43NzYsMzQuODE1LDQsMzAuOTgxLDQsMjYuNzgzVjI2SDI0eiBNNCwyMy43MWMwLTQuNzA4LDIuODA0LTguNTU3LDYuOTI0LTkuNDc4CUMxNi43OTgsMTIuOTIsMjIsMTcuMzUyLDIyLDIzdjFINFYyMy43MXoiPjwvcGF0aD4KPC9zdmc+') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+.icons8-vs-code {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMyOWI2ZjYiIGQ9Ik00NCwxMS4xMXYyNS43OGMwLDEuMjctMC43OSwyLjQtMS45OCwyLjgybC04LjgyLDQuMTRMMzQsMzNWMTVMMzMuMiw0LjE1bDguODIsNC4xNCBDNDMuMjEsOC43MSw0NCw5Ljg0LDQ0LDExLjExeiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjc3YmQiIGQ9Ik05LDMzLjg5NkwzNCwxNVY1LjM1M2MwLTEuMTk4LTEuNDgyLTEuNzU4LTIuMjc1LTAuODZMNC42NTgsMjkuMjM5IGMtMC45LDAuODMtMC44NDksMi4yNjcsMC4xMDcsMy4wMzJjMCwwLDEuMzI0LDEuMjMyLDEuODAzLDEuNTc0QzcuMzA0LDM0LjM3LDguMjcxLDM0LjQzLDksMzMuODk2eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiMwMjg4ZDEiIGQ9Ik05LDE0LjEwNEwzNCwzM3Y5LjY0N2MwLDEuMTk4LTEuNDgyLDEuNzU4LTIuMjc1LDAuODZMNC42NTgsMTguNzYxIGMtMC45LTAuODMtMC44NDktMi4yNjcsMC4xMDctMy4wMzJjMCwwLDEuMzI0LTEuMjMyLDEuODAzLTEuNTc0QzcuMzA0LDEzLjYzLDguMjcxLDEzLjU3LDksMTQuMTA0eiI+PC9wYXRoPgo8L3N2Zz4=') 50% 50% no-repeat;
+    background-size: 100%;
+}
+
+.backskills {
+    height: 180px;
+    width: 70%;
+    background: #aa00ff;
+    border: 1px solid #aa00ff9a;
+    box-shadow: 2px 5px 10px;
+    border-radius: 5px;
+}
+
+.backskills h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.projects {
+    padding-top: 50px;
+    height: 100vh;
+    background-color: rgb(25, 1, 48);
+}
+
+.project {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.cards {
+    height: 375px;
+    width: 231px;
+    background: black;
+    border-radius: 5px;
+    border: 1px solid rgba(247, 0, 255, 0.247);
+    box-shadow: 1px 2px 10px rgba(255, 0, 255, 0.671);
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card {
+    padding: 15px 15px;
+}
+
+.card img {
+    height: 120px;
+    width: 200px;
+}
+
+.projectskills {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.projectskills ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectskills ul li {
+    color: rgb(204, 0, 255);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px;
+    border: 1px solid;
+    border-color: #ca82eea4;
+    box-shadow: 0px 1px 2px;
+}
+
+.appname {
+    padding-top: 5px;
+    color: white;
+}
+
+.aboutapp {
+    margin-top: 5px;
+    color: white;
+    font-size: 3vw;
+}
+
+.viewcode {
+    display: flex;
+    justify-content: space-between;
+}
+
+.open {
+    border: 1px solid;
+    height: 25px;
+    width: 93px;
+    background: linear-gradient(to right, rgb(255, 77, 107), rgb(132, 0, 255));
+    background-blend-mode: lighten;
+}
+
+.open:hover {
+    background: linear-gradient(to right, rgb(255, 77, 107), rgb(132, 0, 255));
+    background-blend-mode: normal;
+}
+
+.open1 {
+    border: 1px solid;
+    height: 25px;
+    width: 94px;
+}
+
+.viewcode .open1:hover {
+    border: none;
+    background: linear-gradient(to right, rgb(255, 77, 107), rgb(132, 0, 255));
+}
+
+.viewcode .open1 {
+    background: black;
+    border: 1px solid;
+}
+
+.open a {
+    text-decoration: none;
+    color: white;
+}
+
+.projectskills1 {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+.projectskills1 ul {
+    list-style: none;
+    display: flex;
+}
+
+.projectskills1 ul li {
+    color: rgb(204, 0, 255);
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px;
+    border: 1px solid;
+    border-color: #ca82eea4;
+    box-shadow: 0px 1px 2px;
+    margin-right: 8px;
+}
+
+
+.education {
+    padding-top: 50px;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgb(25, 1, 48);
+}
+
+.education::-webkit-scrollbar {
+    display: none;
+}
+
+.educations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.college {
+    width: 50%;
+    border: 1px solid rgb(243, 243, 243);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
+    padding: 10px 10px;
+}
+
+.c {
+    display: flex;
+}
+
+.c1 {
+    display: flex;
+    color: rgb(228, 227, 227);
+}
+
+.c2 {
+    display: flex;
+    color: rgba(211, 211, 211, 0.801);
+}
+
+.c3 {
+    display: flex;
+    color: rgb(228, 227, 227);
+}
+
+.c4 {
+    display: flex;
+    color: rgba(211, 211, 211, 0.801);
+    text-align: justify;
+}
+
+
+
+.contact {
+    padding-top: 50px;
+    height: 100vh;
+    background-color: rgb(25, 1, 48);
+}
+
+.contactus {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.contactme {
+    height: 475px;
+    width: 35%;
+    border-radius: 5px;
+    background: rgb(185, 176, 176)
+}
+
+.contactname {
+    width: 80%;
+}
+
+.contactname:focus {
+    border: 1px solid black;
+}
+
+.contactsub {
+    width: 80%;
+}
+
+.send {
+    width: 25%;
+    height: 30px;
+    background: red;
+}
+
+.socialcontact {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    padding-top: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    color: black;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+    .menu {
+        opacity: 1;
+    }
+
+    .navsections {
+        opacity: 0;
+    }
+
+    .myself {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .myself h2 {
+        font-size: 35px;
+    }
+
+    .job {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .job h3 {
+        font-size: 25px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .content h4 {
+        width: 90%;
+    }
+
+    .resume {
+        width: 100%;
+    }
+
+    .projects {
+        height: 140vh;
+    }
+
+    .skills {
+        height: 85vh;
+    }
+
+    .college {
+        width: 85%;
+    }
+
+    .education {
+        height: 95vh;
+    }
+
+    .contactme {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .social {
+        width: 60%;
+    }
+
+    .about {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+    .menu {
+        opacity: 1;
+    }
+
+    .navsections {
+        opacity: 0;
+    }
+
+    .myself {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px 0px 0px;
+        font-size: 20px;
+    }
+
+    .myself h2 {
+        font-size: 35px;
+    }
+
+    .job {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .job h3 {
+        font-size: 25px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .content h4 {
+        width: 90%;
+    }
+
+    .resume {
+        width: 100%;
+    }
+
+    .projects {
+        height: 140vh;
+    }
+
+    .skills {
+        height: 85vh;
+    }
+
+    .college {
+        width: 80%;
+    }
+
+    .education {
+        height: 95vh;
+    }
+
+    .contactme {
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .social {
+        width: 60%;
+    }
+
+    .about {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 539px) {
+    .menu {
+        opacity: 1;
+    }
+
+    .navsections {
+        opacity: 0;
+    }
+
+    .myself {
+        display: flex;
+        justify-content: center;
+        padding: 100px 0px 0px 0px;
+    }
+
+    .job {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 0px 0px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .content h4 {
+        width: 90%;
+    }
+
+    .resume {
+        width: 100%;
+    }
+
+    .projects {
+        height: 140vh;
+    }
+
+    .skills {
+        height: 90vh;
+    }
+
+    .college {
+        width: 70%;
+    }
+
+    .education {
+        height: 91vh;
+    }
+
+    .contactme {
+        width: 70%;
+        margin-top: 40px;
+    }
+
+    .social {
+        width: 60%;
+    }
+
+    .about {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+    .menu {
+        opacity: 1;
+    }
+
+    .navsections {
+        opacity: 0;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .skills {
+        height: 85vh;
+    }
+
+    .college {
+        width: 70%;
+    }
+
+    .education {
+        height: 85vh;
+    }
+
+    .contactme {
+        width: 60%;
+        margin-top: 50px;
+    }
+
+    .social {
+        width: 60%;
+    }
+
+    .about {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content {
+        width: 50%;
+    }
+
+    .projects {
+        height: 100vh;
+    }
+
+    .skills {
+        height: 80vh;
+    }
+
+    .college {
+        width: 70%;
+    }
+
+    .education {
+        height: 80vh;
+    }
+
+    .contactme {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .about {
+        height: 50vh;
+    }
+}
