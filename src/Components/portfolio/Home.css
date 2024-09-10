@@ -240,7 +240,7 @@
 
 .cards {
     height: 375px;
-    width: 231px;
+    width: 232px;
     background: black;
     border-radius: 5px;
     border: 1px solid rgba(247, 0, 255, 0.247);
@@ -328,6 +328,11 @@
 }
 
 .open a {
+    text-decoration: none;
+    color: white;
+}
+
+.open1 a {
     text-decoration: none;
     color: white;
 }
@@ -511,19 +516,19 @@
     }
 
     .projects {
-        height: 140vh;
+        height: 230vh;
     }
 
     .skills {
-        height: 85vh;
+        height: 130vh;
+    }
+
+    .education {
+        height: 120vh;
     }
 
     .college {
         width: 85%;
-    }
-
-    .education {
-        height: 95vh;
     }
 
     .contactme {
@@ -535,9 +540,6 @@
         width: 60%;
     }
 
-    .about {
-        height: 50vh;
-    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px) {
@@ -586,19 +588,19 @@
     }
 
     .projects {
-        height: 140vh;
+        height: 230vh;
     }
 
     .skills {
-        height: 85vh;
+        height: 130vh;
+    }
+
+    .education {
+        height: 120vh;
     }
 
     .college {
         width: 80%;
-    }
-
-    .education {
-        height: 95vh;
     }
 
     .contactme {
@@ -610,9 +612,6 @@
         width: 60%;
     }
 
-    .about {
-        height: 50vh;
-    }
 }
 
 @media only screen and (min-width: 425px) and (max-width: 539px) {
@@ -652,19 +651,19 @@
     }
 
     .projects {
-        height: 140vh;
+        height: 230vh;
     }
 
     .skills {
-        height: 90vh;
+        height: 130vh;
+    }
+
+    .education {
+        height: 120vh;
     }
 
     .college {
         width: 70%;
-    }
-
-    .education {
-        height: 91vh;
     }
 
     .contactme {
@@ -677,7 +676,7 @@
     }
 
     .about {
-        height: 50vh;
+        /* height: 50vh; */
     }
 }
 
@@ -695,7 +694,11 @@
     }
 
     .skills {
-        height: 85vh;
+        height: 130vh;
+    }
+
+    .projects {
+        height: 160vh;
     }
 
     .college {
@@ -703,7 +706,7 @@
     }
 
     .education {
-        height: 85vh;
+        height: 120vh;
     }
 
     .contactme {
@@ -716,7 +719,7 @@
     }
 
     .about {
-        height: 50vh;
+        /* height: 50vh; */
     }
 }
 
@@ -726,20 +729,22 @@
     }
 
     .projects {
-        height: 100vh;
+        height: 160vh;
     }
 
     .skills {
-        height: 80vh;
+        height: 130vh;
+    }
+
+    .education {
+        height: 120vh;
     }
 
     .college {
         width: 70%;
     }
 
-    .education {
-        height: 80vh;
-    }
+
 
     .contactme {
         width: 50%;
@@ -751,6 +756,6 @@
     }
 
     .about {
-        height: 50vh;
+        height: 90vh;
     }
 }

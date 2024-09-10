@@ -148,7 +148,7 @@ export default function Home() {
                             <Typography className='appname'>Mov!es - Movie Ticket Booking</Typography>
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>In this project, I have created a homepage using tools like HTML, CSS, Bootstrap, JavaScript, and ReactJS (Responsive, Rest API using Axios).</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'>View code</Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Ticket-booking">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
@@ -169,7 +169,7 @@ export default function Home() {
                             <Typography className='appname'>JOBES - Jobs posting website</Typography>
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>I've created a responsive page for posting jobs on platforms using frontend technologies like HTML, CSS, Bootstrap, JavaScript, and ReactJS.</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'>View code</Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Jobes">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
@@ -187,7 +187,7 @@ export default function Home() {
                             <Typography className='appname'>Fragrance - Perfume website</Typography>
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>This is my first web development project, and I created entirely using HTML and CSS, featuring responsive design and a basic layout techniques.</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'>View code</Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Fragrance">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
