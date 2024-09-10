@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import { Box, Button, Grid, Icon, styled, TextField, Typography } from '@mui/material';
-import {TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
+import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
 import job from './jobes.jpg'
@@ -134,25 +134,25 @@ export default function Home() {
                     <p>Here are some of the projects I've created while learning web development.</p>
                 </div>
                 <div className='project'>
+
                     <div className="cards">
                         <div className="card">
-                            <img src={ticket} alt="" />
-                            <div className="projectskills">
+                            <img src={perfume} alt="" />
+                            <div className="projectskills1">
                                 <ul>
-                                    <li>REACT JS</li>
-                                    <li>JAVASCRIPT</li>
-                                    <li>REST API</li>
-                                    <li>AXIOS</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
                                 </ul>
                             </div>
-                            <Typography className='appname'>Mov!es - Movie Ticket Booking</Typography>
-                            <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>In this project, I have created a homepage using tools like HTML, CSS, Bootstrap, JavaScript, and ReactJS (Responsive, Rest API using Axios).</Typography>
+                            <Typography className='appname'>Fragrance - Perfume website</Typography>
+                            <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>This is my first web development project, and I created entirely using HTML and CSS, featuring responsive design and a basic layout techniques.</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Ticket-booking">View code</a></Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Fragrance">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
                     </div>
+
 
                     <div className="cards">
                         <div className="card">
@@ -175,19 +175,22 @@ export default function Home() {
                         </div>
                     </div>
 
+
                     <div className="cards">
                         <div className="card">
-                            <img src={perfume} alt="" />
-                            <div className="projectskills1">
+                            <img src={ticket} alt="" />
+                            <div className="projectskills">
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
+                                    <li>REACT JS</li>
+                                    <li>JAVASCRIPT</li>
+                                    <li>REST API</li>
+                                    <li>AXIOS</li>
                                 </ul>
                             </div>
-                            <Typography className='appname'>Fragrance - Perfume website</Typography>
-                            <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>This is my first web development project, and I created entirely using HTML and CSS, featuring responsive design and a basic layout techniques.</Typography>
+                            <Typography className='appname'>Mov!es - Movie Ticket Booking</Typography>
+                            <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>In this project, I have created a homepage using tools like HTML, CSS, Bootstrap, JavaScript, and ReactJS (Responsive, Rest API using Axios).</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Fragrance">View code</a></Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Ticket-booking">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
