@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Grid, Icon, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Divider, Drawer, Grid, Icon, List, ListItem, ListItemButton, ListItemIcon, ListItemText, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
@@ -11,6 +11,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import axios from 'axios';
 
 const Textarea = styled(BaseTextareaAutosize)(
     () => `
@@ -25,6 +26,58 @@ const Textarea = styled(BaseTextareaAutosize)(
 
 export default function Home() {
 
+    const [name, setname] = useState();
+    const [mail, setmail] = useState();
+    const [subject, setsubject] = useState();
+    const [message, setmessage] = useState();
+
+    function send() {
+        axios.post('http://localhost:1300/portfolio/create', {
+            Name: name,
+            Mail: mail,
+            Subject: subject,
+            Message: message
+        }).then(alert('sent'), window.location.reload())
+            .catch(err => (console.log(err)))
+    }
+
+    const [open, setOpen] = React.useState(false);
+
+    const toggleDrawer = (newOpen) => () => {
+        setOpen(newOpen);
+    };
+
+    const DrawerList = (
+        <Box sx={{ width: 250 }} onClick={toggleDrawer(false)}>
+            <List>
+                <ListItem>
+                    <ListItemButton>
+                        <ListItemText><a className='sidebar' href="#about">About</a></ListItemText>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem>
+                    <ListItemButton>
+                        <ListItemText><a className='sidebar' href="#skill">Skills</a></ListItemText>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem>
+                    <ListItemButton>
+                        <ListItemText><a className='sidebar' href="#project">Projects</a></ListItemText>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem>
+                    <ListItemButton>
+                        <ListItemText><a className='sidebar' href="#education">Education</a></ListItemText>
+                    </ListItemButton>
+                </ListItem>
+                <ListItem>
+                    <ListItemButton>
+                        <ListItemText><a className='sidebar' href="#contact">Contact</a></ListItemText>
+                    </ListItemButton>
+                </ListItem>
+            </List>
+        </Box>
+    );
     return (
         <div className='portfolio'>
             <div className='navbar'>
@@ -40,7 +93,10 @@ export default function Home() {
                     <a href="#contact">Contact</a>
                 </div>
                 <div>
-                    <Icon className='menu'><MenuIcon /></Icon>
+                    <Button><Icon onClick={toggleDrawer(true)} className='menu'><MenuIcon /></Icon></Button>
+                    <Drawer anchor='right' open={open} onClose={toggleDrawer(false)}>
+                        {DrawerList}
+                    </Drawer>
                 </div>
             </div>
 
@@ -236,11 +292,11 @@ export default function Home() {
 
                 <div className="contactus">
                     <div className='contactme'>
-                        <TextField className='contactname' sx={{ marginTop: 5 }} label="Name" size="small" />
-                        <TextField className='contactname' sx={{ marginTop: 3 }} label="Email" size="small" />
-                        <TextField className='contactsub' sx={{ marginTop: 3 }} label="Subject" />
-                        <Textarea className='contactsub' sx={{ marginTop: 3, minHeight: '10px', backgroundColor: 'rgba(194, 186, 186, 0.466)' }} placeholder='Message' minRows={4} />
-                        <Button className='send' sx={{ marginTop: 2, fontSize: 12 }} variant='contained'>Send</Button>
+                        <TextField className='contactname' sx={{ marginTop: 5 }} onChange={(e) => setname(e.target.value)} label="Name" size="small" />
+                        <TextField className='contactname' sx={{ marginTop: 3 }} onChange={(e) => setmail(e.target.value)} label="Email" size="small" />
+                        <TextField className='contactsub' sx={{ marginTop: 3 }} onChange={(e) => setsubject(e.target.value)} label="Subject" />
+                        <Textarea className='contactsub1' sx={{ marginTop: 3, minHeight: '10px', backgroundColor: 'rgba(194, 186, 186, 0.466)' }} onChange={(e) => setmessage(e.target.value)} placeholder='Message' minRows={4} />
+                        <Button className='send' sx={{ marginTop: 2, fontSize: 12 }} onClick={send} variant='contained'>Send</Button>
                         <div className="socialcontact">
                             <div className="social">
                                 <a href="tel:7598492019"><Icon><PhoneIcon /></Icon></a>
