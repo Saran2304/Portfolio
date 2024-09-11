@@ -458,10 +458,6 @@
     width: 80%;
 }
 
-/* .contactsub1:hover {
-    border-color: black;
-} */
-
 .contactsub1:focus {
     outline: 1.5px solid rgb(17, 93, 255);
 }
