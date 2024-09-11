@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Divider, Drawer, Grid, Icon, List, ListItem, ListItemButton, ListItemIcon, ListItemText, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Drawer, Grid, Icon, List, ListItem, ListItemButton, ListItemText, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
