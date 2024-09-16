@@ -51,6 +51,17 @@
     background-color: rgb(25, 1, 48);
 }
 
+.avatar {
+    background: rgb(25, 1, 48);
+    display: flex;
+}
+
+.avatar img {
+    padding-top: 50px;
+    height: 450px;
+    width: 300px;
+}
+
 .myself {
     display: flex;
     padding: 80px 0px 0px 90px;
@@ -536,11 +547,11 @@
     }
 
     .projects {
-        height: 230vh;
+        height: 245vh;
     }
 
     .skills {
-        height: 130vh;
+        height: 140vh;
     }
 
     .education {
@@ -558,6 +569,10 @@
 
     .social {
         width: 60%;
+    }
+
+    .contact{
+        height: 110vh;
     }
 
 }
@@ -613,11 +628,11 @@
     }
 
     .projects {
-        height: 230vh;
+        height: 240vh;
     }
 
     .skills {
-        height: 130vh;
+        height: 140vh;
     }
 
     .education {
@@ -635,6 +650,10 @@
 
     .social {
         width: 60%;
+    }
+
+    .contact {
+        height: 110vh;
     }
 
 }
@@ -681,11 +700,11 @@
     }
 
     .projects {
-        height: 230vh;
+        height: 250vh;
     }
 
     .skills {
-        height: 130vh;
+        height: 140vh;
     }
 
     .education {
@@ -705,6 +724,9 @@
         width: 60%;
     }
 
+    .contact {
+        height: 110vh;
+    }
 }
 
 @media only screen and (min-width: 540px) and (max-width: 767px) {
@@ -726,11 +748,11 @@
     }
 
     .skills {
-        height: 130vh;
+        height: 140vh;
     }
 
     .projects {
-        height: 160vh;
+        height: 170vh;
     }
 
     .college {
@@ -748,6 +770,10 @@
 
     .social {
         width: 60%;
+    }
+
+    .contact {
+        height: 115vh;
     }
 
 }

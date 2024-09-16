@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Drawer, Grid, Icon, List, ListItem, ListItemButton, ListItemText, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Drawer, Grid, Grid2, Icon, List, ListItem, ListItemButton, ListItemText, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
 import job from './jobes.jpg'
 import perfume from './perfume.jpg'
+// import avatar from './avatar.png'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -203,8 +204,8 @@ export default function Home() {
                             <Typography className='appname'>Fragrance - Perfume website</Typography>
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>This is my first web development project, and I created entirely using HTML and CSS, featuring responsive design and a basic layout techniques.</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Fragrance">View code</a></Button>
-                                <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Perfume">View code</a></Button>
+                                <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="https://mern-fragrance.netlify.app/">preview</a></Button>
                             </div>
                         </div>
                     </div>
@@ -225,7 +226,7 @@ export default function Home() {
                             <Typography className='appname'>JOBES - Jobs posting website</Typography>
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>I've created a responsive page for posting jobs on platforms using frontend technologies like HTML, CSS, Bootstrap, JavaScript, and ReactJS.</Typography>
                             <div className='viewcode'>
-                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Jobes">View code</a></Button>
+                                <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Post-a-Job">View code</a></Button>
                                 <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
                             </div>
                         </div>
