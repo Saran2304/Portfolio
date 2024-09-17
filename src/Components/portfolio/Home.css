@@ -433,8 +433,6 @@
     text-align: justify;
 }
 
-
-
 .contact {
     padding-top: 50px;
     height: 100vh;
@@ -574,7 +572,7 @@
     }
 
     .contact {
-        height: 110vh;
+        height: 100%;
     }
 }
 
@@ -654,11 +652,6 @@
     .social {
         width: 60%;
     }
-
-    /* .contact {
-        height: 110vh;
-    } */
-
 }
 
 @media only screen and (min-width: 375px) and (max-width: 424px) {
@@ -897,7 +890,7 @@
     }
 
     .about {
-        height: 90vh;
+        height: 100%;
     }
 
     .contact {
