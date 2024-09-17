@@ -64,7 +64,7 @@
 
 .myself {
     display: flex;
-    padding: 80px 0px 0px 90px;
+    padding: 100px 0px 0px 100px;
     color: white;
 }
 
@@ -79,7 +79,7 @@
 
 .job {
     display: flex;
-    padding: 10px 0px 0px 90px;
+    padding: 10px 0px 0px 100px;
     color: white;
 }
 
@@ -95,7 +95,7 @@
 
 .content {
     color: rgba(211, 211, 211, 0.788);
-    padding: 20px 0px 0px 90px;
+    padding: 20px 0px 0px 100px;
     width: 40%;
 }
 
@@ -107,8 +107,9 @@
 }
 
 .resume {
-    width: 55%;
-    padding-top: 50px;
+    width: 50%;
+    display: flex;
+    padding: 50px 0px 0px 100px;
 }
 
 .resume a {
@@ -544,6 +545,8 @@
 
     .resume {
         width: 100%;
+        padding: 50px 0px 0px 0px;
+        justify-content: center;
     }
 
     .projects {
@@ -571,7 +574,7 @@
         width: 60%;
     }
 
-    .contact{
+    .contact {
         height: 110vh;
     }
 
@@ -625,6 +628,8 @@
 
     .resume {
         width: 100%;
+        padding: 50px 0px 0px 0px;
+        justify-content: center;
     }
 
     .projects {
@@ -697,6 +702,8 @@
 
     .resume {
         width: 100%;
+        padding: 50px 0px 0px 0px;
+        justify-content: center;
     }
 
     .projects {
@@ -725,7 +732,7 @@
     }
 
     .contact {
-        height: 110vh;
+        height: 120vh;
     }
 }
 
@@ -773,7 +780,7 @@
     }
 
     .contact {
-        height: 115vh;
+        height: 110vh;
     }
 
 }
@@ -799,8 +806,6 @@
         width: 70%;
     }
 
-
-
     .contactme {
         width: 50%;
         margin-top: 50px;
@@ -812,5 +817,9 @@
 
     .about {
         height: 90vh;
+    }
+
+    .contact {
+        height: 110vh;
     }
 }

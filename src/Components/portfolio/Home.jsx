@@ -1,18 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Drawer, Grid, Grid2, Icon, List, ListItem, ListItemButton, ListItemText, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Drawer, Grid, Icon, IconButton, List, ListItem, ListItemButton, ListItemText, Snackbar, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
 import job from './jobes.jpg'
 import perfume from './perfume.jpg'
-// import avatar from './avatar.png'
 import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Textarea = styled(BaseTextareaAutosize)(
     () => `
@@ -26,6 +27,27 @@ const Textarea = styled(BaseTextareaAutosize)(
 );
 
 export default function Home() {
+
+    const [open1, setOpen1] = useState(false);
+
+    const handleClick = () => {
+        setOpen1(true);
+    };
+
+    const handleClose = () => {
+        setOpen1(false);
+    };
+
+    const action = (
+        <IconButton
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleClose}
+        >
+            <CloseIcon fontSize="small" />
+        </IconButton>
+    );
 
     const [name, setname] = useState();
     const [mail, setmail] = useState();
@@ -227,7 +249,7 @@ export default function Home() {
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>I've created a responsive page for posting jobs on platforms using frontend technologies like HTML, CSS, Bootstrap, JavaScript, and ReactJS.</Typography>
                             <div className='viewcode'>
                                 <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Post-a-Job">View code</a></Button>
-                                <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
+                                <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="https://main--mern-jobpost.netlify.app/">preview</a></Button>
                             </div>
                         </div>
                     </div>
@@ -248,13 +270,19 @@ export default function Home() {
                             <Typography sx={{ fontSize: 11, color: 'white', textAlign: 'justify', marginTop: 1, marginBottom: 2 }}>In this project, I have created a homepage using tools like HTML, CSS, Bootstrap, JavaScript, and ReactJS (Responsive, Rest API using Axios).</Typography>
                             <div className='viewcode'>
                                 <Button className='open1' sx={{ fontSize: 10 }} variant='contained'><a href="https://github.com/Saran2304/Ticket-booking">View code</a></Button>
-                                <Button className='open' sx={{ fontSize: 10 }} variant='contained'><a href="">preview</a></Button>
+                                <Button className='open' onClick={handleClick} sx={{ fontSize: 10 }} variant='contained'><Link>preview</Link></Button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <Snackbar
+                open={open1}
+                autoHideDuration={2000}
+                onClick={handleClose}
+                message="This project not completed yet"
+                action={action}
+            />
 
             <div className="education" id='education'>
                 <div className='heading'>
@@ -303,7 +331,7 @@ export default function Home() {
                                 <a href="tel:7598492019"><Icon><PhoneIcon /></Icon></a>
                                 <a href="mailto:sarans2304@gmail.com"><Icon><MailIcon /></Icon></a>
                                 <a href="https://www.linkedin.com/in/saran-s-488671260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><Icon><LinkedInIcon /></Icon></a>
-                                <a href="#"><Icon><InstagramIcon /></Icon></a>
+                                <a href="https://www.instagram.com/accounts/login/?hl=en"><Icon><InstagramIcon /></Icon></a>
                             </div>
                         </div>
 
