@@ -331,7 +331,7 @@ export default function Home() {
                                 <a href="tel:7598492019"><Icon><PhoneIcon /></Icon></a>
                                 <a href="mailto:sarans2304@gmail.com"><Icon><MailIcon /></Icon></a>
                                 <a href="https://www.linkedin.com/in/saran-s-488671260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><Icon><LinkedInIcon /></Icon></a>
-                                <a href="https://www.instagram.com/accounts/login/?hl=en"><Icon><InstagramIcon /></Icon></a>
+                                <a href="https://www.instagram.com/s_a_r_a_n_55?igsh=MW51Y2d4N2lwcjZ2YQ=="><Icon><InstagramIcon /></Icon></a>
                             </div>
                         </div>
 
