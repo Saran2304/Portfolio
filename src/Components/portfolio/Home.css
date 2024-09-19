@@ -607,6 +607,11 @@
         margin-right: 30px;
     }
 
+    .photo {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
     .about {
         height: 100%;
     }

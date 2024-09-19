@@ -123,7 +123,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <Grid2 container  sx={{display:{xs:'none',md:'flex'}}}>
+            <Grid2 container sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
                     <div className='about' id='about'>
                         <div className='myself'>
@@ -152,7 +152,7 @@ export default function Home() {
 
             </Grid2>
 
-            <Grid2 container sx={{display:{xs:'flex',md:'none'},paddingTop:'50px'}}>
+            <Grid2 container sx={{ display: { xs: 'flex', md: 'none' }, paddingTop: '50px' }}>
 
                 <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
                     <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
