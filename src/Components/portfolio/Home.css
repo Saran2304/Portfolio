@@ -627,7 +627,7 @@
     .myself {
         display: flex;
         justify-content: center;
-        padding: 100px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         font-size: 20px;
     }
 
