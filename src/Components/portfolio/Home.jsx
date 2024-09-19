@@ -141,7 +141,7 @@ export default function Home() {
                         </div>
 
                         <div className="resume">
-                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1TTox_aAzBCsFjk3dBHAYbVxGGYFkmhMS/view?usp=drivesdk">Get resume</a></Button>
+                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1HcqzczFV922bE-pI8mXo70nsV7Qq3Kq_/view?usp=drivesdk">Get resume</a></Button>
                         </div>
                     </div>
                 </Grid2>
