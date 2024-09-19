@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Drawer, Grid, Icon, IconButton, List, ListItem, ListItemButton, ListItemText, Snackbar, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Drawer, Grid, Grid2, Icon, IconButton, List, ListItem, ListItemButton, ListItemText, Snackbar, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
@@ -123,26 +123,64 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='about' id='about'>
-                <div className='myself'>
-                    <h2>Hi, I'm</h2>
-                    <h2 className='name'>Saran S</h2>
-                </div>
+            <Grid2 container  sx={{display:{xs:'none',md:'flex'}}}>
+                <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
+                    <div className='about' id='about'>
+                        <div className='myself'>
+                            <h2>Hi, I'm</h2>
+                            <h2 className='name'>Saran S</h2>
+                        </div>
 
-                <div className='job'>
-                    <h3>I am a</h3>
-                    <h3 className='full'>Full Stack Developer</h3>
-                </div>
+                        <div className='job'>
+                            <h3>I am a</h3>
+                            <h3 className='full'>Full Stack Developer</h3>
+                        </div>
 
-                <div className="content">
-                    <h4>A skilled Full Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
-                </div>
+                        <div className="content">
+                            <h4>A skilled Full Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
+                        </div>
 
-                <div className="resume">
-                    <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1TTox_aAzBCsFjk3dBHAYbVxGGYFkmhMS/view?usp=drivesdk">Get resume</a></Button>
-                </div>
+                        <div className="resume">
+                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1TTox_aAzBCsFjk3dBHAYbVxGGYFkmhMS/view?usp=drivesdk">Get resume</a></Button>
+                        </div>
+                    </div>
+                </Grid2>
 
-            </div>
+                <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
+                </Grid2>
+
+            </Grid2>
+
+            <Grid2 container sx={{display:{xs:'flex',md:'none'},paddingTop:'50px'}}>
+
+                <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
+                </Grid2>
+
+                <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
+                    <div className='about' id='about'>
+                        <div className='myself'>
+                            <h2>Hi, I'm</h2>
+                            <h2 className='name'>Saran S</h2>
+                        </div>
+
+                        <div className='job'>
+                            <h3>I am a</h3>
+                            <h3 className='full'>Full Stack Developer</h3>
+                        </div>
+
+                        <div className="content">
+                            <h4>A skilled Full Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
+                        </div>
+
+                        <div className="resume">
+                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1TTox_aAzBCsFjk3dBHAYbVxGGYFkmhMS/view?usp=drivesdk">Get resume</a></Button>
+                        </div>
+                    </div>
+                </Grid2>
+
+            </Grid2>
 
 
             <div className="skills" id='skill'>

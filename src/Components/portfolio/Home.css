@@ -96,7 +96,19 @@
 .content {
     color: rgba(211, 211, 211, 0.788);
     padding: 20px 0px 0px 100px;
-    width: 40%;
+    width: 60%;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    background: rgb(25, 1, 48);
+}
+
+.photo img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }
 
 .content h4 {
@@ -500,8 +512,21 @@
         margin-right: 30px;
     }
 
+    .about {
+        height: 100%;
+    }
+
     .navbar {
         justify-content: space-between;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .photo img {
+        height: 180px;
+        width: 180px;
     }
 
     .navsections {
@@ -511,7 +536,7 @@
     .myself {
         display: flex;
         justify-content: center;
-        padding: 100px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         font-size: 20px;
     }
 
@@ -580,6 +605,10 @@
     .menu {
         opacity: 1;
         margin-right: 30px;
+    }
+
+    .about {
+        height: 100%;
     }
 
     .navbar {
@@ -660,8 +689,22 @@
         margin-right: 30px;
     }
 
+    .about {
+        height: 100%;
+    }
+
     .navbar {
         justify-content: space-between;
+    }
+
+    .photo {
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .photo img {
+        height: 200px;
+        width: 200px;
     }
 
     .navsections {
@@ -671,7 +714,7 @@
     .myself {
         display: flex;
         justify-content: center;
-        padding: 100px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         font-size: 20px;
     }
 
@@ -743,8 +786,21 @@
         margin-right: 30px;
     }
 
+    .about {
+        height: 100%;
+    }
+
     .navbar {
         justify-content: space-between;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
+    .photo img {
+        height: 200px;
+        width: 200px;
     }
 
     .navsections {
@@ -754,7 +810,7 @@
     .myself {
         display: flex;
         justify-content: center;
-        padding: 100px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .job {
@@ -816,6 +872,18 @@
         margin-right: 30px;
     }
 
+    .about {
+        height: 100%;
+    }
+
+    .myself {
+        padding: 20px 0px 0px 100px;
+    }
+
+    .photo {
+        justify-content: center;
+    }
+
     .navbar {
         justify-content: space-between;
     }
@@ -830,6 +898,7 @@
 
     .skills {
         height: 100%;
+        padding: 50px 0px 0px 0px;
     }
 
     .projects {
@@ -855,6 +924,7 @@
 
     .contact {
         height: 100%;
+        padding-bottom: 20px;
     }
 
 }
@@ -862,6 +932,28 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .content {
         width: 50%;
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .myself {
+        display: flex;
+        padding: 20px 0px 0px 100px;
+        color: white;
+    }
+
+    .photo {
+        padding: 20px 0px 0px 120px;
+    }
+
+    .content {
+        width: 75%;
+    }
+
+    .resume {
+        padding: 30px 0px 0px 100px;
     }
 
     .projects {
