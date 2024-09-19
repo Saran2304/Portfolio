@@ -598,6 +598,7 @@
 
     .contact {
         height: 100%;
+        padding-bottom: 20px;
     }
 }
 
@@ -685,6 +686,11 @@
 
     .social {
         width: 60%;
+    }
+
+    .contact {
+        height: 100%;
+        padding-bottom: 20px;
     }
 }
 
@@ -781,6 +787,7 @@
 
     .contact {
         height: 100%;
+        padding-bottom: 20px;
     }
 
 }
@@ -868,6 +875,7 @@
 
     .contact {
         height: 100%;
+        padding-bottom: 20px;
     }
 }
 
@@ -940,6 +948,7 @@
     }
 
     .about {
+        padding-top: 70px;
         height: 100%;
     }
 
@@ -950,7 +959,7 @@
     }
 
     .photo {
-        padding: 20px 0px 0px 120px;
+        padding: 20px 0px 0px 50px;
     }
 
     .content {
@@ -992,5 +1001,6 @@
 
     .contact {
         height: 100%;
+        padding-bottom: 20px;
     }
 }
