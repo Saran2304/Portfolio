@@ -6,6 +6,7 @@
 .navbar {
     position: fixed;
     background-color: rgb(20, 0, 43);
+    z-index: 10;
     display: flex;
     align-items: center;
     height: 50px;
@@ -615,6 +616,11 @@
         padding-top: 10px;
     }
 
+    .photo img {
+        height: 180px;
+        width: 180px;
+    }
+
     .about {
         height: 100%;
     }
@@ -892,7 +898,20 @@
     }
 
     .myself {
-        padding: 20px 0px 0px 100px;
+        padding: 20px 0px 0px 80px;
+    }
+
+    .job {
+        padding: 10px 0px 0px 80px;
+    }
+
+    .content {
+        padding: 20px 0px 0px 80px;
+        width: 70%;
+    }
+
+    .resume {
+        padding: 50px 0px 0px 80px;
     }
 
     .photo {
@@ -905,10 +924,6 @@
 
     .navsections {
         display: none;
-    }
-
-    .content {
-        width: 70%;
     }
 
     .skills {
@@ -950,7 +965,7 @@
     }
 
     .about {
-        padding-top: 70px;
+        padding-top: 40px;
         height: 100%;
     }
 
@@ -961,7 +976,7 @@
     }
 
     .photo {
-        padding: 20px 0px 0px 50px;
+        padding: 20px 0px 0px 100px;
     }
 
     .content {
@@ -969,7 +984,7 @@
     }
 
     .resume {
-        padding: 30px 0px 0px 100px;
+        padding: 40px 0px 0px 100px;
     }
 
     .projects {
@@ -995,10 +1010,6 @@
 
     .social {
         width: 50%;
-    }
-
-    .about {
-        height: 100%;
     }
 
     .contact {

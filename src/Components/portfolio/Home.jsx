@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Home.css'
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import { Box, Button, Drawer, Grid, Grid2, Icon, IconButton, List, ListItem, ListItemButton, ListItemText, Snackbar, styled, TextField, Typography } from '@mui/material';
+import { Box, Button, Drawer, Grid, Grid2, Icon, IconButton, List, ListItem, Link, ListItemButton, ListItemText, Snackbar, styled, TextField, Typography } from '@mui/material';
 import { TextareaAutosize as BaseTextareaAutosize } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ticket from './ticket.jpg'
@@ -13,7 +13,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import profile from './profile-pic (2).png'
+import profile1 from './profile-pic (3).png'
 
 const Textarea = styled(BaseTextareaAutosize)(
     () => `
@@ -75,7 +76,7 @@ export default function Home() {
             <List>
                 <ListItem>
                     <ListItemButton>
-                        <ListItemText><a className='sidebar' href="#about">About</a></ListItemText>
+                        <ListItemText><a className='sidebar' href="#about2">About</a></ListItemText>
                     </ListItemButton>
                 </ListItem>
                 <ListItem>
@@ -109,7 +110,12 @@ export default function Home() {
                     <h4>Portfolio</h4>
                 </div>
                 <div className='navsections'>
-                    <a href="#about">About</a>
+                    <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                        <Link href="#about1">About</Link>
+                    </Box>
+                    <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                        <Link href="#about2">About</Link>
+                    </Box>
                     <a href="#skill">Skills</a>
                     <a href="#project">Projects</a>
                     <a href="#education">Education</a>
@@ -125,7 +131,7 @@ export default function Home() {
 
             <Grid2 container sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
-                    <div className='about' id='about'>
+                    <div className='about' id='about1'>
                         <div className='myself'>
                             <h2>Hi, I'm</h2>
                             <h2 className='name'>Saran S</h2>
@@ -147,19 +153,19 @@ export default function Home() {
                 </Grid2>
 
                 <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
+                    <img src={profile1} alt="" />
                 </Grid2>
 
             </Grid2>
 
-            <Grid2 container sx={{ display: { xs: 'flex', md: 'none' }, paddingTop: '50px' }}>
+            <Grid2 container id='about2' sx={{ display: { xs: 'flex', md: 'none' }, paddingTop: '50px' }}>
 
                 <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
+                    <img src={profile} alt="" />
                 </Grid2>
 
                 <Grid2 size={{ xs: 12, md: 8, lg: 8 }}>
-                    <div className='about' id='about'>
+                    <div className='about'>
                         <div className='myself'>
                             <h2>Hi, I'm</h2>
                             <h2 className='name'>Saran S</h2>
@@ -175,13 +181,12 @@ export default function Home() {
                         </div>
 
                         <div className="resume">
-                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1TTox_aAzBCsFjk3dBHAYbVxGGYFkmhMS/view?usp=drivesdk">Get resume</a></Button>
+                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1HcqzczFV922bE-pI8mXo70nsV7Qq3Kq_/view?usp=drivesdk">Get resume</a></Button>
                         </div>
                     </div>
                 </Grid2>
 
             </Grid2>
-
 
             <div className="skills" id='skill'>
                 <div className='heading'>
