@@ -14,7 +14,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios';
 import profile from './profile-pic (2).png'
-// import profile1 from './profile-pic (3).png'
+import profile1 from './profile-pic (3).png'
 
 const Textarea = styled(BaseTextareaAutosize)(
     () => `
@@ -152,8 +152,8 @@ export default function Home() {
                     </div>
                 </Grid2>
 
-                <Grid2 className="photo" size={{ xs: 12, md: 4, lg: 4 }}>
-                    <img src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?size=626&ext=jpg&ga=GA1.1.525143333.1712833517&semt=ais_hybrid" alt="" />
+                <Grid2 className="photo" sx={{ paddingLeft: { md: -50 } }} size={{ xs: 12, md: 4, lg: 4 }}>
+                    <img src={profile1} alt="" />
                 </Grid2>
 
             </Grid2>

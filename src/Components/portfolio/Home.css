@@ -959,12 +959,6 @@
 
 }
 
-@media only screen and (min-width: 900px) and (max-width: 991px){
-    .photo {
-        justify-content: center;
-    }
-}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .content {
         width: 50%;
@@ -982,7 +976,7 @@
     }
 
     .photo {
-        padding: 20px 0px 0px 100px;
+        justify-content: center;
     }
 
     .content {
