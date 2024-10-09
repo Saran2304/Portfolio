@@ -61,7 +61,7 @@ export default function Home() {
             Mail: mail,
             Subject: subject,
             Message: message
-        }).then(alert('sent'), window.location.reload())
+        }).then(alert('Kindly contact via Mail or phone call'))
             .catch(err => (console.log(err)))
     }
 
