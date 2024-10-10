@@ -139,11 +139,11 @@ export default function Home() {
 
                         <div className='job'>
                             <h3>I am a</h3>
-                            <h3 className='full'>Full Stack Developer</h3>
+                            <h3 className='full'>Mern Stack Developer</h3>
                         </div>
 
                         <div className="content">
-                            <h4>A skilled Full Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
+                            <h4>A skilled Mern Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
                         </div>
 
                         <div className="resume">
@@ -173,15 +173,15 @@ export default function Home() {
 
                         <div className='job'>
                             <h3>I am a</h3>
-                            <h3 className='full'>Full Stack Developer</h3>
+                            <h3 className='full'>Mern Stack Developer</h3>
                         </div>
 
                         <div className="content">
-                            <h4>A skilled Full Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
+                            <h4>A skilled Mern Stack Developer with knowledge in both Frontend and Backend Technologies. Proficient in building responsive and user-friendly web applications using modern frameworks and tools. Always ready to learn new technologies and passionate about work.</h4>
                         </div>
 
                         <div className="resume">
-                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1HcqzczFV922bE-pI8mXo70nsV7Qq3Kq_/view?usp=drivesdk">Get resume</a></Button>
+                            <Button className='myresume' variant='contained'><a href="https://drive.google.com/file/d/1iTc1AvYU-CsfvCnPsIz1ohGSQAmCNhUZ/view?usp=drivesdk">Get resume</a></Button>
                         </div>
                     </div>
                 </Grid2>
